@@ -49,7 +49,7 @@
                     <div class="container text-end col-sm-6 align-middle text-light">
                         <h1>Conf Bs As</h1>
                         <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro del Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
-                        <button class="btn btn-outline-light text-light" href="#">Quiero ser orador</button>
+                        <button class="btn btn-outline-light" href="#">Quiero ser orador</button>
                         <button class="btn btn-success" href="#">Comprar tickets</button>
                 </div>
             </div>
@@ -59,7 +59,7 @@
         <p class="d-flex justify-content-center mb-0 pb-0">CONOCÉ A LOS</p>
         <h2 class="d-flex justify-content-center mt-0 pt-0">ORADORES</h1>
         <div class="row d-flex justify-content-center">
-            <div style="width: 300px;" class="col-sm-4 mx-auto">
+            <div style="width: 350px;" class="col-sm-4 my-1">
                 <img class="card-img-top cardimg" src="img\steve.jpg" alt="steve">
                     <div class="card">
                         <div class="card-body">
@@ -70,7 +70,7 @@
                         </div>
                     </div>
             </div>
-            <div style="width: 300px;" class="col-sm-4 mx-auto">
+            <div style="width: 350px;" class="col-sm-4 ml-1 my-1">
                 <img class="card-img-top cardimg" src="img\bill.jpg" alt="bill">
                     <div class="card">
                         <div class="card-body">
@@ -81,7 +81,7 @@
                         </div>
                     </div>
             </div>
-            <div style="width: 300px;" class="col-sm-4 mx-auto">
+            <div style="width: 350px;" class="col-sm-4 ml-1 my-1">
                 <img class="card-img-top cardimg" src="img\ada.jpeg" alt="ada">
                     <div class="card">
                         <div class="card-body">
@@ -93,7 +93,54 @@
                     </div>
             </div>
         </div>
+    </div><br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 px-0">
+                <img style="width: 100%;" class="img-fluid" src="img\honolulu.jpg" alt="honolulu">
+            </div>
+            <div class="col-md-6 bg-dark text-light border border-2 border-secondary">
+                <h2 class="my-2">Bs As - Octubre</h1>
+                <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina en Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre Honolulu se refiere al área urbana en la costa suroeste de la isla Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km2 de superficie).
+                </p>
+                <button class="btn btn-outline-light" href="#">Conocé más</button>
+            </div>
+        </div>
+    </div><br>
+    <div class="container">
+        <p class="d-flex justify-content-center mb-0 pb-0">CONVIÉRTETE EN UN</p>
+        <h2 class="d-flex justify-content-center mt-0 pt-0">ORADOR</h1>
+        <p class="d-flex justify-content-center mt-0 pt-0 ">Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</p>
     </div>
-
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+    <div class="container">
+        <form>
+            <div class="row justify-content-center">
+                <div class="align-self-center col-sm-3">
+                    <input type="nombre" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
+                </div>
+                <div class="align-self-center col-sm-3">
+                    <input type="apellido" class="form-control" id="apellido" name="apellido" placeholder="Apellido">
+                </div>
+            </div>
+            <div class="row justify-content-center mt-3">
+                <div class="align-self-center col-sm-6">
+                    <textarea class="form-control" id="descripcion" placeholder="Sobre qué quieres hablar?"
+                        rows="3"></textarea>
+                    <p><small class="text-muted">Recuerda incluir un título para tu charla</small></p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="d-grid col-6 ">
+                    <button class="btn btn-success" type="button">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
