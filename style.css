@@ -1,0 +1,5 @@
+.fondoimagen {
+    background-image: url(img/hawaii.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
