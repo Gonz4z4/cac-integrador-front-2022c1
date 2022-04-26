@@ -112,35 +112,56 @@
         <h2 class="d-flex justify-content-center mt-0 pt-0">ORADOR</h1>
         <p class="d-flex justify-content-center mt-0 pt-0 ">Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</p>
     </div>
-    <script>
-        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-        return new bootstrap.Tooltip(tooltipTriggerEl)
-        })
-    </script>
     <div class="container">
         <form>
             <div class="row justify-content-center">
-                <div class="align-self-center col-sm-3">
+                <div class="align-self-center col-sm-4">
                     <input type="nombre" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
                 </div>
-                <div class="align-self-center col-sm-3">
+                <div class="align-self-center col-sm-4">
                     <input type="apellido" class="form-control" id="apellido" name="apellido" placeholder="Apellido">
                 </div>
             </div>
             <div class="row justify-content-center mt-3">
-                <div class="align-self-center col-sm-6">
+                <div class="align-self-center col-sm-8">
                     <textarea class="form-control" id="descripcion" placeholder="Sobre qué quieres hablar?"
                         rows="3"></textarea>
                     <p><small class="text-muted">Recuerda incluir un título para tu charla</small></p>
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="d-grid col-6 ">
-                    <button class="btn btn-success" type="button">Enviar</button>
+                <div class="d-grid col-sm-8 ">
+                    <button class="btn btn-success" type="button">Enviar</button><br>
                 </div>
             </div>
         </form>
     </div>
+    <footer class="p-4" style="min-height:5em; background-color: rgb(27, 55, 73);">
+        <div class="container">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="text-light nav-link" href="#">Preguntas frecuentes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="text-light nav-link" href="#">Contáctanos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="text-light nav-link" href="#">Prensa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="text-light nav-link" href="#">Conferencias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="text-light nav-link" href="#">Términos y condiciones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="text-light nav-link" href="#">Privacidad</a>
+                </li>
+                <li class="nav-item">
+                    <a class="text-light nav-link" href="#">Estudiantes</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
