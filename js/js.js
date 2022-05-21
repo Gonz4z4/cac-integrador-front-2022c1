@@ -13,7 +13,6 @@ function calcularPrecio(evt){
     } else {
         total =ticket *cant
     }
-    console.log(cant +" "+categoria)
     $total.innerHTML="Total a pagar: $"+total
 }
 document.getElementById("resumen").onclick = calcularPrecio;
